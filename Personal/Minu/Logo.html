@@ -5,18 +5,38 @@
 </head>
 	<style type="text/css">
 		.str{
-			stroke-dasharray:1000;
-			stroke-dashoffset:1000;
+			stroke-dasharray:1000px;
 			-webkit-animation: ani 5s 1 forwards;
 			-webkit-animation-timing-function:ease-in-out;
 			-webkit-animation-fill-mode:forwards;
+			-moz-animation: ani 5s 1 forwards;
+			-moz-animation-timing-function:ease-in-out;
+			-moz-animation-fill-mode:forwards;
 		}
 		#pos{
 			position: absolute; 
 			top:18%;
 			left:33%;
 		}
+		@-moz-keyframes ani{
+			0%{
+				stroke-dashoffset:500px;
+				fill-opacity:0;
+			}
+			50%{
+				stroke-dashoffset:0px;
+				fill-opacity:0;
+			}
+			100%{
+				stroke-dashoffset:0px;
+				fill-opacity:1;
+			}
+		}
 		@-webkit-keyframes ani{
+			0%{
+				stroke-dashoffset:1000px;
+				fill-opacity:0;
+			}
 			50%{
 				stroke-dashoffset:0px;
 				fill-opacity:0;
