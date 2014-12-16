@@ -4,6 +4,14 @@
 	<title></title>
 </head>
 	<style type="text/css">
+		body{
+			background: -webkit-radial-gradient(#ffffff,#cdcdcd);
+			background: -moz-radial-gradient(#ffffff,#cdcdcd);
+			background: -o-radial-gradient(#ffffff,#cdcdcd);
+			background: radial-gradient(#ffffff,#cdcdcd);
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+		}
 		.str{
 			stroke-dasharray:1000px;
 			-webkit-animation: ani 5s 1 forwards;
@@ -12,15 +20,97 @@
 			-moz-animation: ani 5s 1 forwards;
 			-moz-animation-timing-function:ease-in-out;
 			-moz-animation-fill-mode:forwards;
+			-o-animation: ani 5s 1 forwards;
+			-o-animation-timing-function:ease-in-out;
+			-o-animation-fill-mode:forwards;
 		}
 		#pos{
 			position: absolute; 
-			top:18%;
+			top:17%;
 			left:33%;
 		}
-		@-moz-keyframes ani{
+		#pag{
+			position: absolute;
+			top:110%;
+			height: 100%;
+		}
+		#ent{
+			position: absolute;
+			color: black;
+			top:80%;
+			left:39%;
+			font-family: sans-serif;
+			font-weight: 600;
+			opacity: 0;
+			-webkit-animation: oth 5s 1 forwards;
+			-webkit-animation-timing-function:linear;
+			-webkit-animation-fill-mode:forwards;
+			-moz-animation: oth 5s 1 forwards;
+			-moz-animation-timing-function:linear;
+			-moz-animation-fill-mode:forwards;
+			-o-animation: oth 5s 1 forwards;
+			-o-animation-timing-function:linear;
+			-o-animation-fill-mode:forwards;
+		}
+		#com{
+			position: absolute;
+			top:66%;
+			left:32.5%;
+			color: #00445e;
+			font-family: sans-serif;
+			font-size: 200%;
+			opacity: 0;
+			-webkit-animation: oth 5s 1 forwards;
+			-webkit-animation-timing-function:linear;
+			-webkit-animation-fill-mode:forwards;
+			-moz-animation: oth 5s 1 forwards;
+			-moz-animation-timing-function:linear;
+			-moz-animation-fill-mode:forwards;
+			-o-animation: oth 5s 1 forwards;
+			-o-animation-timing-function:linear;
+			-o-animation-fill-mode:forwards;
+		}
+		#arr{
+			position: absolute;
+			height: 50px;
+			width:100px;
+			top:88%;
+			left:42%;
+			opacity: 0;
+			-webkit-animation: oth 5s 1 forwards;
+			-webkit-animation-timing-function:linear;
+			-webkit-animation-fill-mode:forwards;
+			-moz-animation: oth 5s 1 forwards;
+			-moz-animation-timing-function:linear;
+			-moz-animation-fill-mode:forwards;
+			-o-animation: oth 5s 1 forwards;
+			-o-animation-timing-function:linear;
+			-o-animation-fill-mode:forwards;
+		}
+		#sec{
+			position: absolute;
+			top:110%;
+			height: 100%;
+		}
+		#arr:hover{
+			transform:translateY(15px);
+			transition: transform 0.5s;
+		}
+		#ent:hover + #arr{
+			transform:translateY(15px);
+			transition: transform 0.5s;
+		}
+		@-o-keyframes oth{
+			50%{
+				opacity: 0;
+			}
+			100%{
+				opacity: 1;
+			}
+		}
+		@-o-keyframes ani{
 			0%{
-				stroke-dashoffset:500px;
+				stroke-dashoffset:1000px;
 				fill-opacity:0;
 			}
 			50%{
@@ -30,6 +120,36 @@
 			100%{
 				stroke-dashoffset:0px;
 				fill-opacity:1;
+			}
+		}
+		@-moz-keyframes oth{
+			50%{
+				opacity: 0;
+			}
+			100%{
+				opacity: 1;
+			}
+		}
+		@-moz-keyframes ani{
+			0%{
+				stroke-dashoffset:1000px;
+				fill-opacity:0;
+			}
+			50%{
+				stroke-dashoffset:0px;
+				fill-opacity:0;
+			}
+			100%{
+				stroke-dashoffset:0px;
+				fill-opacity:1;
+			}
+		}
+		@-webkit-keyframes oth{
+			50%{
+				opacity: 0;
+			}
+			100%{
+				opacity: 1;
 			}
 		}
 		@-webkit-keyframes ani{
@@ -54,5 +174,9 @@
 		<path class="str" d="M 173 173 Q 165 140 165 105 Q 125 105 85 85 Q 105 125 105 165 Q 140 165 173 173" fill-opacity="0" fill="#fff200" stroke="#fff200" stroke-width="2" />
 		<path class="str" d="M 177 177 Q 185 210 185 245 Q 225 245 265 265 Q 245 225 245 185 Q 210 185 177 177" fill-opacity="0" fill="#a0410d" stroke="#a0410d" stroke-width="2" />
 	</svg>
+	<h2 id="com">M A K I M&nbsp;&nbsp; M E D - A I D S</h2>
+	<a href="#sec" ><h2 id="ent">ENTER WEBSITE</h2>
+	<img id="arr" src="ar5.png"></a>
+	<div id="sec"><p>Sample Text</p></div>
 </body>
 </html>
