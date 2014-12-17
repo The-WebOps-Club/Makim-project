@@ -11,6 +11,8 @@
 			background: radial-gradient(#ffffff,#cdcdcd);
 			background-repeat: no-repeat;
 			background-attachment: fixed;
+			height: 100%;
+			width: 100%;
 		}
 		.str{
 			stroke-dasharray:1000px;
@@ -24,10 +26,13 @@
 			-o-animation-timing-function:ease-in-out;
 			-o-animation-fill-mode:forwards;
 		}
-		#pos{
-			position: absolute; 
-			top:17%;
-			left:33%;
+		#pos1{
+			position: absolute;
+			top:18%;
+			left: 50%;
+			-webkit-transform: translateX(-50%);
+			-moz-transform: translateX(-50%);
+			transform: translateX(-50%);
 		}
 		#pag{
 			position: absolute;
@@ -38,10 +43,13 @@
 			position: absolute;
 			color: black;
 			top:80%;
-			left:39%;
 			font-family: sans-serif;
 			font-weight: 600;
 			opacity: 0;
+			left: 50%;
+			-webkit-transform: translateX(-50%);
+			-moz-transform: translateX(-50%);
+			transform: translateX(-50%);
 			-webkit-animation: oth 5s 1 forwards;
 			-webkit-animation-timing-function:linear;
 			-webkit-animation-fill-mode:forwards;
@@ -55,11 +63,14 @@
 		#com{
 			position: absolute;
 			top:66%;
-			left:32.5%;
 			color: #00445e;
 			font-family: sans-serif;
 			font-size: 200%;
 			opacity: 0;
+			left: 50%;
+			-webkit-transform: translateX(-50%);
+			-moz-transform: translateX(-50%);
+			transform: translateX(-50%);
 			-webkit-animation: oth 5s 1 forwards;
 			-webkit-animation-timing-function:linear;
 			-webkit-animation-fill-mode:forwards;
@@ -74,9 +85,11 @@
 			position: absolute;
 			height: 50px;
 			width:100px;
-			top:88%;
-			left:42%;
+			top:91.5%;
 			opacity: 0;
+   			left: 50%;
+   			margin-top: -25px;
+	   		margin-left: -50px;
 			-webkit-animation: oth 5s 1 forwards;
 			-webkit-animation-timing-function:linear;
 			-webkit-animation-fill-mode:forwards;
@@ -86,6 +99,8 @@
 			-o-animation: oth 5s 1 forwards;
 			-o-animation-timing-function:linear;
 			-o-animation-fill-mode:forwards;
+			transform:translateY(0px);
+			transition: transform 0.5s;
 		}
 		#sec{
 			position: absolute;
@@ -168,7 +183,7 @@
 		}
 	</style>
 <body>
-	<svg id="pos" height="350" width="350">
+	<svg id="pos1" height="350" width="350">
 		<path class="str" d="M 173 177 Q 110 195 45 195 Q 45 260 25 325 Q 90 305 155 305 Q 155 240 173 177" fill-opacity="0" fill="#0076a3" stroke="#0076a3" stroke-width="2" />
 		<path class="str" d="M 177 173 Q 240 155 305 155 Q 305 90 325 25 Q 260 45 195 45 Q 195 110 177 173" fill-opacity="0" fill="#598527" stroke="#598527" stroke-width="2" />
 		<path class="str" d="M 173 173 Q 165 140 165 105 Q 125 105 85 85 Q 105 125 105 165 Q 140 165 173 173" fill-opacity="0" fill="#fff200" stroke="#fff200" stroke-width="2" />
