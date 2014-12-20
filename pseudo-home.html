@@ -17,13 +17,13 @@
 		}
 		.str{
 			stroke-dasharray:1000px;
-			-webkit-animation: ani 5s 1 forwards;
+			-webkit-animation: ani 4s 1 forwards;
 			-webkit-animation-timing-function:ease-in-out;
 			-webkit-animation-fill-mode:forwards;
-			-moz-animation: ani 5s 1 forwards;
+			-moz-animation: ani 4s 1 forwards;
 			-moz-animation-timing-function:ease-in-out;
 			-moz-animation-fill-mode:forwards;
-			-o-animation: ani 5s 1 forwards;
+			-o-animation: ani 4s 1 forwards;
 			-o-animation-timing-function:ease-in-out;
 			-o-animation-fill-mode:forwards;
 		}
@@ -32,16 +32,15 @@
 			color: black;
 			top:79%;
 			font-family: sans-serif;
-			font-weight: 600;
 			opacity: 0;
-			left: 9%;
-			-webkit-animation: oth 5s 1 forwards;
+			text-align: center;
+			-webkit-animation: oth 4s 1 forwards;
 			-webkit-animation-timing-function:linear;
 			-webkit-animation-fill-mode:forwards;
-			-moz-animation: oth 5s 1 forwards;
+			-moz-animation: oth 4s 1 forwards;
 			-moz-animation-timing-function:linear;
 			-moz-animation-fill-mode:forwards;
-			-o-animation: oth 5s 1 forwards;
+			-o-animation: oth 4s 1 forwards;
 			-o-animation-timing-function:linear;
 			-o-animation-fill-mode:forwards;
 		}
@@ -50,17 +49,15 @@
 			top:66%;
 			color: #00445e;
 			font-family: sans-serif;
-			font-weight: 700;
 			opacity: 0;
-			left: 3%;
-			width: 500px;
-			-webkit-animation: oth 5s 1 forwards;
+			text-align: center;
+			-webkit-animation: oth 4s 1 forwards;
 			-webkit-animation-timing-function:linear;
 			-webkit-animation-fill-mode:forwards;
-			-moz-animation: oth 5s 1 forwards;
+			-moz-animation: oth 4s 1 forwards;
 			-moz-animation-timing-function:linear;
 			-moz-animation-fill-mode:forwards;
-			-o-animation: oth 5s 1 forwards;
+			-o-animation: oth 4s 1 forwards;
 			-o-animation-timing-function:linear;
 			-o-animation-fill-mode:forwards;
 		}
@@ -73,13 +70,13 @@
    			left:50%;
    			margin-top: -25px;
 	   		margin-left: -50px;
-			-webkit-animation: oth 5s 1 forwards;
+			-webkit-animation: oth 4s 1 forwards;
 			-webkit-animation-timing-function:linear;
 			-webkit-animation-fill-mode:forwards;
-			-moz-animation: oth 5s 1 forwards;
+			-moz-animation: oth 4s 1 forwards;
 			-moz-animation-timing-function:linear;
 			-moz-animation-fill-mode:forwards;
-			-o-animation: oth 5s 1 forwards;
+			-o-animation: oth 4s 1 forwards;
 			-o-animation-timing-function:linear;
 			-o-animation-fill-mode:forwards;
 			transform:translateY(0px);
@@ -185,7 +182,7 @@
 	</style>
 </head>	
 <body>
-	<div class="container">
+	<div class="fluid-container">
 		<div class="my-svg-container">
 			<svg class="my-svg" preserveAspectRatio= "xMinYMin meet" viewBox="0 0 350 350">
 				<path class="str" d="M 173 177 Q 110 195 45 195 Q 45 260 25 325 Q 90 305 155 305 Q 155 240 173 177" fill-opacity="0" fill="#0076a3" stroke="#0076a3" stroke-width="2" />
@@ -194,10 +191,21 @@
 				<path class="str" d="M 177 177 Q 185 210 185 245 Q 225 245 265 265 Q 245 225 245 185 Q 210 185 177 177" fill-opacity="0" fill="#a0410d" stroke="#a0410d" stroke-width="2" />
 			</svg>
 		</div>
-		<h2 id="com" class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-5 col-md-offset-4">M A K I M&nbsp;&nbsp; M E D - A I D S</h2>
-		<a href="#sec" ><h3 class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4" id="ent">ENTER WEBSITE</h3>
-		<img id="arr" class="img-responsive" src="ar5.png"></a>
+		<div id="com" class="col-xs-12"><h2 style="font-weight:700">M A K I M&nbsp;&nbsp; M E D - A I D S</h2></div>
+		<div id="ent" class="col-xs-12"><h3 style="font-weight:700">ENTER WEBSITE</h3></div>
+		<img id="arr" class="img-responsive" src="ar5.png">
 		<div id="sec"><p>Sample Text</p></div>
 	</div>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#ent").click(function(){
+				$("body").animate({scrollTop : 800},800);
+			});
+			$("#arr").click(function(){
+				$("body").animate({scrollTop : 800},800);
+			});
+		});
+	</script>
 </body>
 </html>
