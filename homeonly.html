@@ -82,11 +82,7 @@
 			transform:translateY(0px);
 			transition: transform 0.5s;
 		}
-		#sec{
-			position: absolute;
-			top:110%;
-			height: 100%;
-		}
+		
 		#arr:hover{
 			transform:translateY(15px);
 			transition: transform 0.5s;
@@ -219,6 +215,7 @@
 			background-color: transparent;
 			padding-top: 10px;
 			height: 70px;
+			padding-right: 40px;
 		}
 		#d3{
     		border-left: solid;
@@ -238,28 +235,21 @@
  			top: 10px;
  			height:150px;
  		}
+ 		#im{
+ 			width:160px;
+ 			height:55px;
+ 			position: relative;
+ 			top:-10px;
+ 		}
+ 		#nav{
+ 			height:70px;
+ 		}
  		
  	}
 	</style>
 </head>	
 <body>
 	<div class="fluid-container">
-		<div id="dm">
-			<div class="my-svg-container">
-				<svg class="my-svg" preserveAspectRatio= "xMinYMin meet" viewBox="0 0 350 350">
-					<path class="str" d="M 173 177 Q 110 195 45 195 Q 45 260 25 325 Q 90 305 155 305 Q 155 240 173 177" fill-opacity="0" fill="#0076a3" stroke="#0076a3" stroke-width="2" />
-					<path class="str" d="M 177 173 Q 240 155 305 155 Q 305 90 325 25 Q 260 45 195 45 Q 195 110 177 173" fill-opacity="0" fill="#598527" stroke="#598527" stroke-width="2" />
-					<path class="str" d="M 173 173 Q 165 140 165 105 Q 125 105 85 85 Q 105 125 105 165 Q 140 165 173 173" fill-opacity="0" fill="#fff200" stroke="#fff200" stroke-width="2" />
-					<path class="str" d="M 177 177 Q 185 210 185 245 Q 225 245 265 265 Q 245 225 245 185 Q 210 185 177 177" fill-opacity="0" fill="#a0410d" stroke="#a0410d" stroke-width="2" />
-				</svg>
-			</div>
-			<div id="com" class="col-xs-12"><h2 style="font-weight:700">M A K I M&nbsp;&nbsp; M E D - A I D S</h2></div>
-			<div id="ent" class="col-xs-12"><h3 style="font-weight:700">ENTER WEBSITE</h3></div>
-			<img id="arr" class="img-responsive" src="ar5.png">
-		</div>
-	
-	
-
 		<div id="sec">
 			<nav class="navbar navbar-default" role="navigation" id="nav">
   <div class="container-fluid" id="h1">
@@ -278,10 +268,10 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right" id="u1">
-        <li id="l1"><a href="home.html" id="un"><div>HOME</div></a></li>
-        <li id="l1"><a href="#" id="un"><div>OUR PRODUCTS</div></a></li>
-        <li id="l1"><a href="#" id="un"><div>PLACE AN ENQUIRY</div></a></li>
-        <li id="l1"><a href="#" id="un"><div>CONTACT US</div></a></li>
+        <li id="l1"><a href="#" id="un"><div>HOME</div></a></li>
+        <li id="l1"><a href="products.html" id="un"><div>OUR PRODUCTS</div></a></li>
+        <li id="l1"><a href="enquiry.html" id="un"><div>PLACE AN ENQUIRY</div></a></li>
+        <li id="l1"><a href="contactus.html" id="un"><div>CONTACT US</div></a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
@@ -362,19 +352,7 @@ $("body").css("overflow", "hidden");
 
     $('.carousel').carousel('cycle');
 });
-		$(document).ready(function(){
-			$("#ent").click(function(){
-				$("#sec").animate({top : 0},800);
-				$("#dm").hide();
-				$("body").css("overflow", "auto");
-			});
-			$("#arr").click(function(){
-				$("#sec").animate({top : 0},800);
-				$("#dm").hide();
-				$("body").css("overflow", "auto");
-			});
 		
-		});
 	</script>
 </body>
 </html>
