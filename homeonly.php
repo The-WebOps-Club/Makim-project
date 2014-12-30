@@ -112,12 +112,6 @@
 		#p2{
 			text-align: justify;
 		}
-		#im{
-			position: relative;
-			top: -25px;
-    		width: 300px;
-			height: 70px;
-		}
     	#d1{
     		background-color: black;
     		height: 400px;
@@ -126,9 +120,8 @@
     		top: 10px;
     		left: 25px;
    		}
-    	
    		#im0{
-    			padding-left: 20px;
+    		padding-left: 20px;
     	}
     	#d{
     		text-align: center;
@@ -199,88 +192,17 @@
 				fill-opacity:1;
 			}
 		}
-		#un:hover{
-			border-bottom: solid;
-			border-width: 1px;
-			border-color: grey;
-		}
-		#u1{
-			padding-right: 5px;
-		}
-		#li{
-			padding-right: 30px;
-		}
-		@media (min-width:768px) {
-			#nav{
-			background-color: transparent;
-			padding-top: 10px;
-			height: 70px;
-			padding-right: 40px;
-		}
-		#d3{
-    		border-left: solid;
-    		border-width: 1px;
-    		border-color: black;
-         }
-         #im1{
-      		width: 422px;
-      		height: 250px;
-       	}
-       
- 		}
- 	@media(max-width: 768px){
- 		#im1{
- 			width: 200px;
- 			position: relative;
- 			top: 10px;
- 			height:150px;
- 		}
- 		#im{
- 			width:160px;
- 			height:55px;
- 			position: relative;
- 			top:-10px;
- 		}
- 		/*#nav{
- 			height:70px;
- 		}*/
- 		
- 	}
 	</style>
 </head>	
 <body>
 	<div class="fluid-container">
 		<div id="sec">
-			<nav class="navbar navbar-default" role="navigation" id="nav">
-  <div class="container-fluid" id="h1">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#"><img src="logomak.png" id="im"></a>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right" id="u1">
-        <li id="l1"><a href="#" id="un"><div>HOME</div></a></li>
-        <li id="l1"><a href="products.html" id="un"><div>OUR PRODUCTS</div></a></li>
-        <li id="l1"><a href="enquiry.html" id="un"><div>PLACE AN ENQUIRY</div></a></li>
-        <li id="l1"><a href="contactus.html" id="un"><div>CONTACT US</div></a></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-<br><br><div class="container-fluid">
-<div class="row">
-<div class="col-xs-3 hidden-sm hidden-md hidden-lg">
-</div>
-<div class="hidden-xs col-sm-3 col-md-3 col-lg-3" id="d">
+			<?php include("navbar.php");?>
+			<br><br>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xs-3 hidden-sm hidden-md hidden-lg"></div>
+					<div class="hidden-xs col-sm-3 col-md-3 col-lg-3" id="d">
 <p id="p1">
 <b>Our Clients:</b></p>
 <img src="tiger.jpg" id="im0" width="100%" class="img-responsive"></div><div class="col-xs-12 col-sm-5 col-md-5 col-lg-5" id="d3"><br>

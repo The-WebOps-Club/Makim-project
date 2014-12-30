@@ -31,6 +31,7 @@
 			position: absolute;
 			color: black;
 			top:79%;
+			left: -10px;
 			font-family: sans-serif;
 			opacity: 0;
 			text-align: center;
@@ -65,6 +66,7 @@
 			position: absolute;
 			height: 50px;
 			width:100px;
+			left: -40px;
 			top:91.5%;
 			opacity: 0;
    			left:50%;
@@ -116,12 +118,6 @@
 		#p2{
 			text-align: justify;
 		}
-		#im{
-			position: relative;
-			top: -25px;
-    		width: 300px;
-			height: 70px;
-		}
     	#d1{
     		background-color: black;
     		height: 400px;
@@ -130,7 +126,6 @@
     		top: 10px;
     		left: 25px;
    		}
-    	
    		#im0{
     			padding-left: 20px;
     	}
@@ -203,53 +198,12 @@
 				fill-opacity:1;
 			}
 		}
-		#un:hover{
-			border-bottom: solid;
-			border-width: 1px;
-			border-color: grey;
-		}
-		#u1{
-			padding-right: 5px;
-		}
-		#li{
-			padding-right: 30px;
-		}
-		@media (min-width:768px) {
-			#nav{
-			background-color: transparent;
-			padding-top: 10px;
-			height: 70px;
-			padding-right: 40px;
-		}
-		#d3{
-    		border-left: solid;
-    		border-width: 1px;
-    		border-color: black;
-         }
-         #im1{
-      		width: 422px;
-      		height: 250px;
-       	}
-       
+ 		li{
+ 			cursor: pointer;
+  		}
+ 		ul{
+ 			list-style: none;
  		}
- 	@media(max-width: 768px){
- 		#im1{
- 			width: 200px;
- 			position: relative;
- 			top: 10px;
- 			height:150px;
- 		}
- 		#im{
- 			width:160px;
- 			height:55px;
- 			position: relative;
- 			top:-10px;
- 		}
- 		/*#nav{
- 			height: 70px;
- 		}*/
- 		
- 	}
 	</style>
 </head>	
 <body>
@@ -264,114 +218,86 @@
 				</svg>
 			</div>
 			<div id="com" class="col-xs-12"><h2 style="font-weight:700">M A K I M&nbsp;&nbsp; M E D - A I D S</h2></div>
-			<div id="ent" class="col-xs-12"><h3 style="font-weight:700">ENTER WEBSITE</h3></div>
-			<img id="arr" class="img-responsive" src="ar5.png">
+			<ul>
+				<li><div id="ent" class="col-xs-12"><h3 style="font-weight:700">ENTER WEBSITE</h3></div></li>
+				<li><img id="arr" class="img-responsive" src="ar5.png"></li>
+			</ul>	
 		</div>
-	
-	
 
 		<div id="sec">
-			<nav class="navbar navbar-default" role="navigation" id="nav">
-  <div class="container-fluid" id="h1">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#"><img src="logomak.png" id="im"></a>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right" id="u1">
-        <li id="l1"><a href="#" id="un"><div>HOME</div></a></li>
-        <li id="l1"><a href="products.html" id="un"><div>OUR PRODUCTS</div></a></li>
-        <li id="l1"><a href="enquiry.html" id="un"><div>PLACE AN ENQUIRY</div></a></li>
-        <li id="l1"><a href="contactus.html" id="un"><div>CONTACT US</div></a></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-<br><br><div class="container-fluid">
-<div class="row">
-<div class="col-xs-3 hidden-sm hidden-md hidden-lg">
-</div>
-<div class="hidden-xs col-sm-3 col-md-3 col-lg-3" id="d">
-<p id="p1">
-<b>Our Clients:</b></p>
-<img src="tiger.jpg" id="im0" width="100%" class="img-responsive"></div><div class="col-xs-12 col-sm-5 col-md-5 col-lg-5" id="d3"><br>
-<p id="p2">Established in the year 1997, we were <b>the first to manufacture Plaster Of Paris Bandages B.P (P.O.P Bandages) in Gujarat</b> - one of the most industrialized states in India.</p>
-<p id="p2">The entire technology involved in manufacturing has been conceptualized, designed and made by us which notonly produces economic versality. Recognizing this achievement the Government of Gujarat, as a special case, conferred the authority of manufacturing chemist on Shri. Bhupendra Makim, one of our partners, who is an engineer by qualification.</p>
-<br>
-<p id="p2"><b>Currently, we supply our bandages under thebrand name of MEDICAST to several individual Doctors, Hospitals, Several Government agencies (through tenders) as well as merchant exporters. We are also capable of manufacturing customsized P.O.P Bandages under custom brand names (pre-dominantly used for export).</b></p>
-</div><br>
-<div class="col-xs-6 hidden-sm hidden-md hidden-lg">
-<p id="p1">
-<b>Our Clients:</b></p>
-<img src="tiger.jpg" width="100%" class="img-responsive"></div>
-<div class="col-xs-6 col-sm-4 col-md-4 col-lg-4" id="d4">
-	<br>
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
- 
-  
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <img src="logomak.png" id="im1" >
-      <div class="carousel-caption">
-       </div>
-    </div>
-    <div class="item">
-      <img src="pop2.jpg" id="im1" >
-      <div class="carousel-caption">
-        </div>
-    </div>
-    <div class="item">
-      <img src="pop3.jpg" id="im1" >
-      <div class="carousel-caption">
-        </div>
-    </div>
-    <div class="item">
-      <img src="pop4.jpg" id="im1" >
-      <div class="carousel-caption">
-        </div>
-    </div>
-    <div class="item">
-      <img src="pop5.jpg" id="im1" >
-      <div class="carousel-caption">
-        </div>
-    </div>
-    <div class="item">
-      <img src="pop6.jpg" id="im1" >
-      <div class="carousel-caption">
-        </div>
-    </div>
-  </div>
-  <a id="p" class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a id="n" class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div></div></div></div>
-	</div></div>
+			<?php include("navbar.php");?>
+			<br><br>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xs-3 hidden-sm hidden-md hidden-lg">
+					</div>
+					<div class="hidden-xs col-sm-3 col-md-3 col-lg-3" id="d">
+						<p id="p1"><b>Our Clients:</b></p>
+						<img src="tiger.jpg" id="im0" width="100%" class="img-responsive">
+					</div>
+					<div class="col-xs-12 col-sm-5 col-md-5 col-lg-5" id="d3"><br>
+						<p id="p2">Established in the year 1997, we were <b>the first to manufacture Plaster Of Paris Bandages B.P (P.O.P Bandages) in Gujarat</b> - one of the most industrialized states in India.</p>
+						<p id="p2">The entire technology involved in manufacturing has been conceptualized, designed and made by us which notonly produces economic versality. Recognizing this achievement the Government of Gujarat, as a special case, conferred the authority of manufacturing chemist on Shri. Bhupendra Makim, one of our partners, who is an engineer by qualification.</p>
+						<br>
+						<p id="p2"><b>Currently, we supply our bandages under thebrand name of MEDICAST to several individual Doctors, Hospitals, Several Government agencies (through tenders) as well as merchant exporters. We are also capable of manufacturing customsized P.O.P Bandages under custom brand names (pre-dominantly used for export).</b></p>
+					</div><br>
+					<div class="col-xs-6 hidden-sm hidden-md hidden-lg">
+						<p id="p1"><b>Our Clients:</b></p>
+						<img src="tiger.jpg" width="100%" class="img-responsive"></div>
+						<div class="col-xs-6 col-sm-4 col-md-4 col-lg-4" id="d4">
+							<br>
+							<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  								<div class="carousel-inner" role="listbox">
+    								<div class="item active">
+      									<img src="logomak.png" id="im1" >
+      									<div class="carousel-caption"></div>
+    								</div>
+    								<div class="item">
+      									<img src="pop2.jpg" id="im1" >
+      									<div class="carousel-caption"></div>
+    								</div>
+    								<div class="item">
+      									<img src="pop3.jpg" id="im1" >
+      									<div class="carousel-caption"></div>
+    								</div>
+    								<div class="item">
+      									<img src="pop4.jpg" id="im1" >
+      									<div class="carousel-caption"></div>
+    								</div>
+    								<div class="item">
+      									<img src="pop5.jpg" id="im1" >
+      									<div class="carousel-caption"></div>
+    								</div>
+    								<div class="item">
+      									<img src="pop6.jpg" id="im1" >
+      									<div class="carousel-caption"></div>
+    								</div>
+  								</div>
+  								<a id="p" class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    								<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    								<span class="sr-only">Previous</span>
+  								</a>
+  								<a id="n" class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    								<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    								<span class="sr-only">Next</span>
+  								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 	<script type="text/javascript">
-	
-$("body").css("overflow", "hidden");
-	$(document).ready(function () {
-    $('.carousel').carousel({
-        interval: 3000
-    });
-
-    $('.carousel').carousel('cycle');
-});
+		$("body").css("overflow", "hidden");
+		$(document).ready(function () {
+    		$('.carousel').carousel({
+        		interval: 3000
+    		});
+    		$('.carousel').carousel('cycle');
+		});
 		$(document).ready(function(){
 			$("#ent").click(function(){
 				$("#sec").animate({top : 0},800);
@@ -383,7 +309,6 @@ $("body").css("overflow", "hidden");
 				$("#dm").hide();
 				$("body").css("overflow", "auto");
 			});
-		
 		});
 	</script>
 </body>

@@ -16,57 +16,6 @@
 			overflow-y: scroll;
       overflow-x: hidden;
 		}
-    #im{
-			position: relative;
-			top: -25px;
-    	width: 300px;
-			height: 70px;
-		}
-    .un:hover{
-      border-bottom: solid;
-      border-width: 1px;
-      border-color: grey;
-    }
-    #u1{
-      padding-right: 5px;
-    }
-    #li{
-      padding-right: 30px;
-    }
-    @media (min-width:768px) {
-      #nav{
-      background-color: transparent;
-      padding-top: 10px;
-      height: 70px;
-      }
-    #d3{
-        border-left: solid;
-        border-width: 1px;
-        border-color: black;
-        }
-         #im1{
-          width: 422px;
-          height: 250px;
-        }   
-    }
-    @media(max-width: 768px){
-    #im1{
-      width: 200px;
-      position: relative;
-      top: 10px;
-      height:150px;
-      }
-      #im{
-      width:160px;
-      height:55px;
-      position: relative;
-      top:-13px;
-    }
-    }
-		/*#nav{
-		padding-top: 10px;
-		height: 70px;
-		}*/
 		ul.affix {
 			position: fixed; 
 			top: 0px;
@@ -84,24 +33,24 @@
   			margin-bottom: 30px;
   			padding-top:    10px;
   			padding-bottom: 10px;
-  			background-color: #f7f5fa;
+  			background-color: transparent;
   			border-radius: 5px;
 			}
 		.sidebar .nav > li > a {
   			display: block;
-  			color: #716b7a;
+  			color: #00445e;
   			padding: 5px 20px;
 		}
 		.sidebar .nav > li > a:hover,
 		.sidebar .nav > li > a:focus {
   			text-decoration: none;
-  			background-color: #e5e3e9;
+  			background-color: transparent;
 		}
 		.sidebar .nav > .active > a,
 		.sidebar .nav > .active:hover > a,
 		.sidebar .nav > .active:focus > a {
   		font-weight: bold;
-  		color: #563d7c;
+  		color: #598527;
 			background-color: transparent;
 		}
 		#content {
@@ -128,40 +77,19 @@
 	</style>
 </head>
 <body data-spy="scroll" data-target="#affix-nav">
-	<nav class="navbar navbar-default" role="navigation" id="nav">
-  		<div class="container-fluid" id="h1">
-    		<div class="navbar-header">
-      			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        			<span class="sr-only">Toggle navigation</span>
-        			<span class="icon-bar"></span>
-        			<span class="icon-bar"></span>
-        			<span class="icon-bar"></span>
-        			<span class="icon-bar"></span>
-      			</button>
-      			<a class="navbar-brand" href="#"><img src="logomak.png" id="im"></a>
-    		</div>
-    		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      			<ul class="nav navbar-nav navbar-right" id="u1">
-        			<li id="l1"><a href="homeonly.html" id="un"><div>HOME</div></a></li>
-        			<li id="l1"><a href="#" id="un"><div>OUR PRODUCTS</div></a></li>
-        			<li id="l1"><a href="enquiry.html" id="un"><div>PLACE AN ENQUIRY</div></a></li>
-        			<li id="l1"><a href="contactus.html" id="un"><div>CONTACT US</div></a></li>
-      			</ul>
-    		</div>
-  		</div>
-	</nav>
+	<?php include("navbar.php");?>
 	<div class="container">
     	<div class="row">
-        	<nav id="affix-nav" class="sidebar col-md-4 hidden-xs hidden-sm">
+        	<nav id="affix-nav" class="sidebar col-md-2 hidden-xs hidden-sm">
             	<ul class="nav sidenav" data-spy="affix" data-offset-top="30">
-                	<li class="active"><a href="#section-1">Section One</a></li>
-                	<li><a href="#section-2">Section Two</a></li>
-                	<li><a href="#section-3">Section Three</a></li>
-                	<li><a href="#section-4">Section Four</a></li>
-                	<li><a href="#section-5">Section Five</a></li>
+                	<li class="active"><a href="#section-1" id="sec1-but">Section One</a></li>
+                	<li><a href="#section-2" id="sec2-but">Section Two</a></li>
+                	<li><a href="#section-3" id="sec3-but">Section Three</a></li>
+                	<li><a href="#section-4" id="sec4-but">Section Four</a></li>
+                	<li><a href="#section-5" id="sec5-but">Section Five</a></li>
             	</ul>
         	</nav>
-        	<div class="col-md-8">
+        	<div class="col-md-10">
             	<h2 id="section-1">Section One</h2>
 	            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Vestibulum id metus ac nisl bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet sagittis. In tincidunt orci sit amet elementum vestibulum. Vivamus fermentum in arcu in aliquam. Quisque aliquam porta odio in fringilla. Vivamus nisl leo, blandit at bibendum eu, tristique eget risus. Integer aliquet quam ut elit suscipit, id interdum neque porttitor. Integer faucibus ligula.</p>
     	        <p>Vestibulum quis quam ut magna consequat faucibus. Pellentesque eget nisi a mi suscipit tincidunt. Ut tempus dictum risus. Pellentesque viverra sagittis quam at mattis. Suspendisse potenti. Aliquam sit amet gravida nibh, facilisis gravida odio. Phasellus auctor velit at lacus blandit, commodo iaculis justo viverra. Etiam vitae est arcu. Mauris vel congue dolor. Aliquam eget mi mi. Fusce quam tortor, commodo ac dui quis, bibendum viverra erat. Maecenas mattis lectus enim, quis tincidunt dui molestie euismod. Curabitur et diam tristique, accumsan nunc eu, hendrerit tellus.</p>
@@ -192,7 +120,36 @@
 	</div>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.2/js/bootstrap.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.2/js/bootstrap.min.js"></script>
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $("#sec1-but").click(function() {
+        $('html, body').animate({
+          scrollTop: $("#section-1").offset().top
+        }, 2000);
+      });
+      $("#sec2-but").click(function() {
+        $('html, body').animate({
+          scrollTop: $("#section-2").offset().top
+        }, 2000);
+      });
+      $("#sec3-but").click(function() {
+        $('html, body').animate({
+          scrollTop: $("#section-3").offset().top
+        }, 2000);
+      });
+      $("#sec4-but").click(function() {
+        $('html, body').animate({
+          scrollTop: $("#section-4").offset().top
+        }, 2000);
+      });
+      $("#sec5-but").click(function() {
+        $('html, body').animate({
+          scrollTop: $("#section-5").offset().top
+        }, 2000);
+      });  
+    });
+  </script>
 </body>
 </html>
