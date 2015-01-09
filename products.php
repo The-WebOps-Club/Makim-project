@@ -13,8 +13,6 @@
 			background: radial-gradient(#ffffff,#cdcdcd);
 			background-repeat: no-repeat;
 			background-attachment: fixed;
-			overflow-y: scroll;
-      overflow-x: hidden;
 		}
 		ul.affix {
 			position: fixed; 
@@ -31,7 +29,7 @@
 		.sidenav {
   			margin-top: 30px;
   			margin-bottom: 30px;
-  			padding-top:    10px;
+  			padding-top:    90px;
   			padding-bottom: 10px;
   			background-color: transparent;
   			border-radius: 5px;
@@ -56,24 +54,6 @@
 		#content {
 			margin-top:30px;
 		}
-    ::-webkit-scrollbar {
-      width: 8px;
-    }
-    ::-webkit-scrollbar-track {
-      -webkit-box-shadow: inset 0 0 6px #7996a1; 
-      -webkit-border-radius: 0px;
-      border-radius: 0px;
-      background: #7996a1;
-    }
-    ::-webkit-scrollbar-thumb {
-      -webkit-border-radius: 8px;
-      border-radius: 8px;
-      background: #00445e; 
-      -webkit-box-shadow: inset 0 0 6px #00445e; 
-    }
-    ::-webkit-scrollbar-thumb:window-inactive {
-      background: #00445e; 
-    }
 	</style>
 </head>
 <body data-spy="scroll" data-target="#affix-nav">
@@ -81,7 +61,7 @@
 	<div class="container">
     	<div class="row">
         	<nav id="affix-nav" class="sidebar col-md-2 hidden-xs hidden-sm">
-            	<ul class="nav sidenav" data-spy="affix" data-offset-top="30">
+            	<ul class="nav sidenav" data-spy="affix">
                 	<li class="active"><a href="#section-1" id="sec1-but">Section One</a></li>
                 	<li><a href="#section-2" id="sec2-but">Section Two</a></li>
                 	<li><a href="#section-3" id="sec3-but">Section Three</a></li>
@@ -119,35 +99,38 @@
     	</div>
 	</div>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.2/js/bootstrap.min.js"></script>
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
   <script type="text/javascript">
     $(document).ready(function(){
-      $("#sec1-but").click(function() {
+      $("#sec1-but").click(function(e) {
+        e.preventDefault();
         $('html, body').animate({
           scrollTop: $("#section-1").offset().top
-        }, 2000);
+        }, 670);
       });
-      $("#sec2-but").click(function() {
+      $("#sec2-but").click(function(e) {
+        e.preventDefault();
         $('html, body').animate({
           scrollTop: $("#section-2").offset().top
-        }, 2000);
+        }, 670);
       });
-      $("#sec3-but").click(function() {
+      $("#sec3-but").click(function(e) {
+        e.preventDefault();
         $('html, body').animate({
           scrollTop: $("#section-3").offset().top
-        }, 2000);
+        }, 670);
       });
-      $("#sec4-but").click(function() {
+      $("#sec4-but").click(function(e) {
+        e.preventDefault();
         $('html, body').animate({
           scrollTop: $("#section-4").offset().top
-        }, 2000);
+        }, 670);
       });
-      $("#sec5-but").click(function() {
+      $("#sec5-but").click(function(e) {
+        e.preventDefault();
         $('html, body').animate({
           scrollTop: $("#section-5").offset().top
-        }, 2000);
+        }, 670);
       });  
     });
   </script>

@@ -25,18 +25,18 @@
 	<div class="container" style="margin-top:10%">
 		<form role="form">
 			<div class="form-group">
-				<div class="input-group col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 col-md-3 col-md-offset-4">
+				<div class="input-group col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 col-md-3 col-md-offset-5">
 					<span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span><input type="text" class="form-control" placeholder="Name">
 				</div>		
 			</div>
 			<div class="form-group">
-				<div class="input-group col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 col-md-3 col-md-offset-4">
+				<div class="input-group col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 col-md-3 col-md-offset-5">
 					<span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span><input type="email" class="form-control" placeholder="Email">
 				</div>
 			</div>
 			<div class="form-group">
-				<div class="input-group col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 col-md-3 col-md-offset-4">
-					<span class="input-group-addon"><span class="glyphicon glyphicon-earphone"></span></span><input type="number" class="form-control" placeholder="Mobile No.">
+				<div class="input-group col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 col-md-3 col-md-offset-5">
+					<span class="input-group-addon"><span class="glyphicon glyphicon-earphone"></span></span><input type="text" class="form-control" placeholder="Mobile No.">
 				</div>		
 			</div>
 			<div class="form-group">
@@ -45,7 +45,7 @@
 				</div>		
 			</div>
 			<br>
-			<div class="input-group col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 col-md-3 col-md-offset-4">
+			<div class="input-group col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 col-md-3 col-md-offset-5">
 				<button type="submit" class="btn btn-primary">Submit</button>
 			</div>	
 		</form>
