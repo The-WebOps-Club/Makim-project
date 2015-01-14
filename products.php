@@ -3,8 +3,7 @@
 <head>
 	<title></title>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	 <?php include("partials/head.php");?>
 	<style type="text/css">
 		body{
 			background: -webkit-radial-gradient(#ffffff,#cdcdcd);
@@ -98,8 +97,7 @@
         	</div>
     	</div>
 	</div>
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	 <?php include("partials/foot.php");?>
   <script type="text/javascript">
     $(document).ready(function(){
       $("#sec1-but").click(function(e) {

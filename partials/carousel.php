@@ -22,27 +22,27 @@
 	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   								<div class="carousel-inner" role="listbox">
     								<div class="item active">
-      									<img src="logomak.png" id="im1" >
+      									<img src="../img/logomark.png" >
       									<div class="carousel-caption"></div>
     								</div>
     								<div class="item">
-      									<img src="pop2.jpg" id="im1" >
+      									<img src="../img/pop2.jpg" id="im1" >
       									<div class="carousel-caption"></div>
     								</div>
     								<div class="item">
-      									<img src="pop3.jpg" id="im1" >
+      									<img src="../img/pop3.jpg" id="im1" >
       									<div class="carousel-caption"></div>
     								</div>
     								<div class="item">
-      									<img src="pop4.jpg" id="im1" >
+      									<img src="../img/pop4.jpg" id="im1" >
       									<div class="carousel-caption"></div>
     								</div>
     								<div class="item">
-      									<img src="pop5.jpg" id="im1" >
+      									<img src="../img/pop5.jpg" id="im1" >
       									<div class="carousel-caption"></div>
     								</div>
     								<div class="item">
-      									<img src="pop6.jpg" id="im1" >
+      									<img src="../img/pop6.jpg" id="im1" >
       									<div class="carousel-caption"></div>
     								</div>
   								</div>

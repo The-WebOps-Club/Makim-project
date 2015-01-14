@@ -220,7 +220,7 @@
 			<div id="com" class="col-xs-12"><h2 style="font-weight:700">M A K I M&nbsp;&nbsp; M E D - A I D S</h2></div>
 			<ul>
 				<li><div id="ent" class="col-xs-12"><h3 style="font-weight:700">ENTER WEBSITE</h3></div></li>
-				<li><img id="arr" class="img-responsive" src="ar5.png"></li>
+				<li><img id="arr" class="img-responsive" src="img/ar5.png"></li>
 			</ul>	
 		</div>
 
