@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.css">
+
 	<style type="text/css">
 		
 		@media (min-width:768px) {
@@ -23,8 +18,7 @@
  			
  		}
 	</style>
-</head>
-<body>
+
 	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   								<div class="carousel-inner" role="listbox">
     								<div class="item active">
@@ -61,7 +55,4 @@
     								<span class="sr-only">Next</span>
   								</a>
 							</div>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-</body>
-</html>
+	
