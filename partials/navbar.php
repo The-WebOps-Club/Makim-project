@@ -58,11 +58,11 @@
 		        <span class="icon-bar"></span>
 			    <span class="icon-bar"></span>
 		    </button>
-	        <a class="navbar-brand" href="homeonly.php"><img src="logomak.png" id="im"></a>
+	        <a class="navbar-brand" href="homeonly.php"><img src="img/logomak.png" id="im"></a>
 		</div>
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
   			<ul class="nav navbar-nav navbar-right" id="u1">
-    			<li id="l1"><a href="homeonly.php" id="un"><div>HOME</div></a></li>
+    			<li id="l1"><a href="homeonlypage.php" id="un"><div>HOME</div></a></li>
     			<li id="l1"><a href="products.php" id="un"><div>OUR PRODUCTS</div></a></li>
     			<li id="l1"><a href="enquiry.php" id="un"><div>PLACE AN ENQUIRY</div></a></li>
     			<li id="l1"><a href="contactus.php" id="un"><div>CONTACT US</div></a></li>
