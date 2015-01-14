@@ -108,21 +108,7 @@
   			top: 0;
   			left: 0;
 		}
-		#p2{
-			text-align: justify;
-		}
-    	#d1{
-    		background-color: black;
-    		height: 400px;
-    		width: 1px;
-    		position: relative;
-    		top: 10px;
-    		left: 25px;
-   		}
-   		
-    	#d{
-    		text-align: center;
-    	}
+		
 		@-o-keyframes oth{
 			50%{
 				opacity: 0;
