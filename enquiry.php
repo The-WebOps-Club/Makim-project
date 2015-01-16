@@ -68,9 +68,16 @@ function test_input($data) {
 	</div>	
 	<?php
 $myfile = fopen("enquiry/$name.txt", "x") or die("Unable to open file!");
+fwrite($myfile, "Name: ");
 fwrite($myfile, $name);
+fwrite($myfile, " , ");
+fwrite($myfile, "E-mail: ");
 fwrite($myfile, $email);
+fwrite($myfile, " , ");
+fwrite($myfile, "Mob-no: ");
 fwrite($myfile, $mobilenumber);
+fwrite($myfile, " , ");
+fwrite($myfile, "Querries: ");
 fwrite($myfile, $querry);
 fflush($myfile);
 fclose($myfile);
